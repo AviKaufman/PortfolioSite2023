@@ -1,71 +1,145 @@
+/* Base styles - these apply to all screen sizes by default */
+
 body {
-    background-color: #121212;
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #121212;
-    padding: 1rem 3rem; 
-  }
-  
-  
-  
-  nav a {
-    color: #acaaaa;
-    text-decoration: none;
-    padding: 0.5rem 3rem;
-    font-weight: bold;
-    font-size: 2rem;
-    transition: color 0.3s ease-in-out;
-  }
-  
-  nav a:hover {
-    color: #fff;
-  }
-  
+  background-color: #121212;
+  color: white;
+  /* use a font that resembles handwriting */
+  font-family: 'Dancing Script', cursive;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #121212;
+  padding: 1rem;
+}
+
+nav a {
+  color: #acaaaa;
+  text-decoration: none;
+  padding: 0rem 1.8rem; /* Reduced padding for smaller screens */
+  font-weight: bold;
+  font-size: 1rem; /* Reduced font size for smaller screens */
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #fff;
+}
 
 .cover-image-container {
-    overflow: hidden;
-    border-radius: 50%;
-    float: right;
-    margin-right: 5rem;
-    margin-top: 10rem;
+  text-align: center; /* Center the image on small screens */
+  margin-top: 2rem; /* Reduced margin for smaller screens */
+  margin-bottom: 1rem;
+}
+
+.cover-image-container img {
+  max-width: 80%; /* Ensure the image is not larger than the container */
+  height: auto;
+  border-radius: 20%;
 }
 
 .intro h1 {
-    font-size: 3rem; 
-    color: #ffffff; 
-    margin: 0 0 1rem 0; 
-    
+  text-align: center;
+  font-size: 2rem; /* Reduced font size for smaller screens */
+  margin: 0 0 1rem 0;
+  
+}
+
+.intro p {
+  font-size: 1rem; /* Reduced font size for smaller screens */
+  max-width: 90%; /* Allow a little margin on the sides */
+  margin: auto;
+  padding-bottom: 3rem;
+}
+
+.intro {
+  justify-content: center;
+  align-items: center;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column; /* Stacks children vertically on small screens */
+  align-items: center;
+  text-align: center;
+}
+
+
+.content-container::before {
+  content: '';
+  display: block;
+  margin: 2rem 0; /* Adjusts space around the line */
+  height: 1px; /* Line thickness */
+  background-color: #acaaaa; /* Line color */
+  width: 80%; /* Line width */
+}
+
+
+/* Large screens (large laptops, desktops) */
+@media (min-width: 992px) {
+  nav {
+      padding: 5rem 3rem; /* Increase padding for larger screens */
   }
-  
-  
+
+  nav a {
+      padding: 0.5rem 12rem;
+      font-size: 2rem;
+  }
+
+  .cover-image-container img {
+    max-width: 100%; /* Ensure the image is not larger than the container */
+    height: auto;
+    border-radius: 20%;
+  }
+
+  .cover-image-container {
+      float: right;
+      margin-right: 3rem;
+      margin-top: 3rem; /* Adjusted for better spacing on large screens */
+  }
+
+  .intro h1 {
+    padding-top: 8rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    font-size: 3rem;
+  }
+
   .intro p {
-    font-size: 1.2rem; 
-    color: #acaaaa; 
-    font-weight: normal; 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-    max-width: 800px; 
-    margin: auto; 
-    text-align: center; 
-    
+    padding-right: 0rem;
+    text-align: center;
+    font-size: 1.2rem;
   }
-  
- 
-  
+
   .intro {
-    
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: flex-start; 
-    text-align: center; 
-    padding: 4rem 0; 
-    
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content-container {
+    padding-left: 0rem;
+    display: flex;
+    flex-direction: column; /* Stacks children vertically on small screens */
+    align-items: center;
+    text-align: center;
   }
   
+  .content-container::before {
+    /* remove the line for the larger screen */
+    display: none;
+  }
+
+  .intro h1::after {
+    /* add vertical line for the larger screen */
+    content: '';
+    display: block;
+    margin: 2rem 0; /* Adjusts space around the line */
+    height: 1px; /* Line thickness */
+    background-color: #acaaaa; /* Line color */
+    width: 100%; /* Line width */
+  }
+}
