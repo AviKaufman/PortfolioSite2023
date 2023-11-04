@@ -1,24 +1,28 @@
 /* Base styles - these apply to all screen sizes by default */
 
 body {
-  background-color: #121212;
-  color: white;
-  /* use a font that resembles handwriting */
-  font-family: 'Dancing Script', cursive;
+  background: linear-gradient(to right, #0000FF, #8A2BE2, #DA70D6);
+  color: rgb(0, 0, 0);
+  font-family: 'Playpen Sans', cursive;
   margin: 0;
   padding: 0;
+  padding-top: 60px;
 }
 
 nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #121212;
+  background-color: rgb(20,20,20);
   padding: 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 nav a {
-  color: #acaaaa;
+  color: rgb(255,255,255,0.5);
   text-decoration: none;
   padding: 0rem 1.8rem; /* Reduced padding for smaller screens */
   font-weight: bold;
@@ -27,7 +31,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #fff;
+  color: rgb(255,255,255,1);
 }
 
 .cover-image-container {
@@ -69,25 +73,16 @@ nav a:hover {
 }
 
 
-.content-container::before {
-  content: '';
-  display: block;
-  margin: 2rem 0; /* Adjusts space around the line */
-  height: 1px; /* Line thickness */
-  background-color: #acaaaa; /* Line color */
-  width: 80%; /* Line width */
-}
-
 
 /* Large screens (large laptops, desktops) */
 @media (min-width: 992px) {
   nav {
-      padding: 5rem 3rem; /* Increase padding for larger screens */
+      padding: 0.5rem 3rem; /* Increase padding for larger screens */
   }
 
   nav a {
-      padding: 0.5rem 12rem;
-      font-size: 2rem;
+      padding: 0.2rem 12rem;
+      font-size: 1.5rem;
   }
 
   .cover-image-container img {
@@ -103,8 +98,8 @@ nav a:hover {
   }
 
   .intro h1 {
-    padding-top: 8rem;
-    padding-bottom: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 0rem;
     text-align: center;
     font-size: 3rem;
   }
@@ -121,25 +116,221 @@ nav a:hover {
   }
 
   .content-container {
+    width: 40%;
+    background-color: rgb(255,255,255,0.5);
+    border-radius: 0.2rem;
     padding-left: 0rem;
-    display: flex;
-    flex-direction: column; /* Stacks children vertically on small screens */
-    align-items: center;
-    text-align: center;
+    /* move the container to the right */
+    margin-left: 13rem;
+    margin-top: 4.5rem;
+    position: relative;
+    max-height: fit-content;
+    text-align: left;
+    font-size: 1.5rem;
+
+
   }
+
   
   .content-container::before {
-    /* remove the line for the larger screen */
-    display: none;
+    content: '';
+    position: absolute;
+    background-color: rgb(255,255,255,0.15);
+    inset: 0;
+    transform: rotate(-5deg);
+    z-index: -1;
   }
 
   .intro h1::after {
     /* add vertical line for the larger screen */
     content: '';
     display: block;
-    margin: 2rem 0; /* Adjusts space around the line */
-    height: 1px; /* Line thickness */
-    background-color: #acaaaa; /* Line color */
+    margin: 1rem 0; /* Adjusts space around the line */
+    height: 3px; /* Line thickness */
+    background-color: #000000; /* Line color */
     width: 100%; /* Line width */
   }
+
+  .about-me h2 {
+    text-align: center;
+  }
+
+  .about-me {
+    margin-left: 10rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    width: 75%;
+    background-color: rgb(255,255,255,0.5);
+    border-radius: 0.2rem;
+    /* move the container to the right */
+    position: relative;
+    max-height: fit-content;
+    text-align: left;
+    font-size: 1.5rem;
+    padding: 3rem;
+  }
+
+  .about-me::before {
+    content: '';
+    position: absolute;
+    background-color: rgb(255,255,255,0.15);
+    inset: 0;
+    transform: rotate(-5deg);
+    z-index: -1;
+  }
+
+  .about-me h2::after {
+    content: '';
+    display: block;
+    margin: 1rem 0; /* Adjusts space around the line */
+    height: 3px; /* Line thickness */
+    background-color: #000000; /* Line color */
+    width: 100%; /* Line width */
+  }
+
+  .accolades h2 {
+    text-align: center;
+  }
+
+  .accolades {
+    margin-left: 10rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    width: 75%;
+    background-color: rgb(255,255,255,0.5);
+    border-radius: 0.2rem;
+    /* move the container to the right */
+    position: relative;
+    max-height: fit-content;
+    text-align: left;
+    font-size: 1.5rem;
+    padding: 3rem;
+  }
+
+  .accolades::before {
+    content: '';
+    position: absolute;
+    background-color: rgb(255,255,255,0.15);
+    inset: 0;
+    transform: rotate(-5deg);
+    z-index: -1;
+  }
+
+  .accolades h2::after {
+    content: '';
+    display: block;
+    margin: 1rem 0; /* Adjusts space around the line */
+    height: 3px; /* Line thickness */
+    background-color: #000000; /* Line color */
+    width: 100%; /* Line width */
+  }
+
+  .socials h2 {
+    text-align: center;
+  }
+
+  .socials {
+    width: 30%;
+    background-color: rgb(255,255,255,0.5);
+    border-radius: 0.2rem;
+    /* move the container to the right */
+    position: relative;
+    max-height: fit-content;
+    text-align: left;
+    font-size: 1.5rem;
+    padding: 3rem;
+  }
+
+  .socials::before {
+    content: '';
+    position: absolute;
+    background-color: rgb(255,255,255,0.15);
+    inset: 0;
+    transform: rotate(-5deg);
+    z-index: -1;
+  }
+
+  .socials h2::after {
+    content: '';
+    display: block;
+    margin: 1rem 0; /* Adjusts space around the line */
+    height: 3px; /* Line thickness */
+    background-color: #000000; /* Line color */
+    width: 100%; /* Line width */
+  }
+
+  .send-message h2 {
+    text-align: center;
+  }
+
+  .send-message {
+    width: 30%; 
+    background-color: rgb(255,255,255,0.5);
+    border-radius: 0.2rem;
+    /* move the container to the right */
+    position: relative;
+    max-height: fit-content;
+    text-align: left;
+    font-size: 1.5rem;
+    padding: 3rem;
+  }
+
+  .send-message::before {
+    content: '';
+    position: absolute;
+    background-color: rgb(255,255,255,0.15);
+    inset: 0;
+    transform: rotate(-5deg);
+    z-index: -1;
+  }
+
+  .send-message h2::after {
+    content: '';
+    display: block;
+    margin: 1rem 0; /* Adjusts space around the line */
+    height: 3px; /* Line thickness */
+    background-color: #000000; /* Line color */
+    width: 100%; /* Line width */
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* move the containers away from the edges of the screen */
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 10rem;
+  }
+
+  .icon {
+    text-decoration: none;
+    color: rgb(0,0,0);
+    font-size: 2rem;
+    padding-right: 1rem;
+  }
+
+  .text {
+    text-decoration: none;
+    color: black;
+}
+
+/* Since the .text class is used within <a> elements, you need to specifically target them to remove the text decoration */
+.text a {
+    text-decoration: none;
+    color: black;
+}
+
+.text a:hover {
+    color : rgb(0,0,0,0.5);
+
+
+
+
+
+  
+
+
+  
 }
