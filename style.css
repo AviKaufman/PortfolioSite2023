@@ -742,6 +742,7 @@ nav a:hover {
 .quantum-proposal h4 {
   font-size: 2rem;
   text-emphasis: bold;
+  text-align: center;
 }
 
 .resources-container h2 {
@@ -792,6 +793,111 @@ nav a:hover {
 }
 
 .resources-container h4 {
+  font-size: 2rem;
+  text-emphasis: bold;
+}
+
+.video-container {
+  float: right;
+  margin-right: 3rem;
+  margin-top: 12rem;
+}
+
+.video-details h2 {
+  text-align: center;
+}
+
+.video-details {
+  width: 30%; 
+  background-color: rgb(255,255,255,0.5);
+  border-radius: 0.2rem;
+  /* move the container to the right */
+  position: relative;
+  max-height: fit-content;
+  text-align: left;
+  font-size: 1.5rem;
+  padding: 3rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-top: 10rem;
+}
+
+.video-details a {
+  text-decoration: none;
+  color: black;
+}
+
+.video-details a:hover {
+  color : rgb(0,0,0,0.5);
+
+}
+
+.video-details::before {
+  content: '';
+  position: absolute;
+  background-color: rgb(255,255,255,0.15);
+  inset: 0;
+  transform: rotate(-5deg);
+  z-index: -1;
+}
+
+.video-details h2::after {
+  content: '';
+  display: block;
+  margin: 1rem 0; /* Adjusts space around the line */
+  height: 3px; /* Line thickness */
+  background-color: #000000; /* Line color */
+  width: 100%; /* Line width */
+}
+
+.further-context h2 {
+  text-align: center;
+}
+
+.further-context {
+  width: 80%; 
+  background-color: rgb(255,255,255,0.5);
+  border-radius: 0.2rem;
+  /* move the container to the right */
+  position: relative;
+  max-height: fit-content;
+  text-align: left;
+  font-size: 1.5rem;
+  padding: 3rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-top: 10rem;
+}
+
+.further-context a {
+  text-decoration: none;
+  color: black;
+}
+
+.further-context a:hover {
+  color : rgb(0,0,0,0.5);
+
+}
+
+.further-context::before {
+  content: '';
+  position: absolute;
+  background-color: rgb(255,255,255,0.15);
+  inset: 0;
+  transform: rotate(-2deg);
+  z-index: -1;
+}
+
+.further-context h2::after {
+  content: '';
+  display: block;
+  margin: 1rem 0; /* Adjusts space around the line */
+  height: 3px; /* Line thickness */
+  background-color: #000000; /* Line color */
+  width: 100%; /* Line width */
+}
+
+.further-context h4 {
   font-size: 2rem;
   text-emphasis: bold;
 }
