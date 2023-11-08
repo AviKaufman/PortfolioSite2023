@@ -904,3 +904,819 @@ nav a:hover {
 
 }
 
+@media (min-width: 1440px) {
+  nav {
+      padding: 0.5rem 3rem; /* Increase padding for larger screens */
+  }
+
+  nav a {
+      padding: 0.2rem 12rem;
+      font-size: 1.5rem;
+  }
+
+  .cover-image-container img {
+    max-width: 100%; /* Ensure the image is not larger than the container */
+    height: auto;
+    border-radius: 20%;
+  }
+
+  .cover-image-container {
+      float: right;
+      margin-right: 13rem;
+      margin-top: 5rem; /* Adjusted for better spacing on large screens */
+  }
+
+  .intro h1 {
+    padding-top: 2rem;
+    padding-bottom: 0rem;
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .intro p {
+    padding-right: 0rem;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .intro {
+    justify-content: center;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .content-container {
+    width: 40%;
+    background-color: rgb(255,255,255,0.5);
+    border-radius: 0.2rem;
+    padding-left: 0rem;
+    /* move the container to the right */
+    margin-left: 13rem;
+    margin-top: 4.5rem;
+    position: relative;
+    max-height: fit-content;
+    text-align: left;
+    font-size: 1.5rem;
+
+
+  }
+
+  
+  .content-container::before {
+    content: '';
+    position: absolute;
+    background-color: rgb(255,255,255,0.15);
+    inset: 0;
+    transform: rotate(-5deg);
+    z-index: -1;
+  }
+
+  .intro h1::after {
+    /* add vertical line for the larger screen */
+    content: '';
+    display: block;
+    margin: 1rem 0; /* Adjusts space around the line */
+    height: 3px; /* Line thickness */
+    background-color: #000000; /* Line color */
+    width: 100%; /* Line width */
+  }
+
+  .about-me h2 {
+    text-align: center;
+  }
+
+  .about-me h4 {
+    text-align: center;
+    color: rgb(0,0,0,1);
+  }
+
+  .about-me {
+    margin-left: 10rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    width: 75%;
+    background-color: rgb(255,255,255,0.5);
+    border-radius: 0.2rem;
+    /* move the container to the right */
+    position: relative;
+    max-height: fit-content;
+    text-align: left;
+    font-size: 1.5rem;
+    padding: 3rem;
+  }
+
+  .about-me::before {
+    content: '';
+    position: absolute;
+    background-color: rgb(255,255,255,0.15);
+    inset: 0;
+    transform: rotate(-3deg);
+    z-index: -1;
+  }
+
+  .about-me h2::after {
+    content: '';
+    display: block;
+    margin: 1rem 0; /* Adjusts space around the line */
+    height: 3px; /* Line thickness */
+    background-color: #000000; /* Line color */
+    width: 100%; /* Line width */
+  }
+
+  .accolades h2 {
+    text-align: center;
+  }
+
+  .accolades {
+    margin-left: 10rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    width: 75%;
+    background-color: rgb(255,255,255,0.5);
+    border-radius: 0.2rem;
+    /* move the container to the right */
+    position: relative;
+    max-height: fit-content;
+    text-align: left;
+    font-size: 1.5rem;
+    padding: 3rem;
+  }
+
+  .accolades::before {
+    content: '';
+    position: absolute;
+    background-color: rgb(255,255,255,0.15);
+    inset: 0;
+    transform: rotate(-5deg);
+    z-index: -1;
+  }
+
+  .accolades h2::after {
+    content: '';
+    display: block;
+    margin: 1rem 0; /* Adjusts space around the line */
+    height: 3px; /* Line thickness */
+    background-color: #000000; /* Line color */
+    width: 100%; /* Line width */
+  }
+
+  .socials h2 {
+    text-align: center;
+  }
+
+  .socials {
+    width: 30%;
+    background-color: rgb(255,255,255,0.5);
+    border-radius: 0.2rem;
+    /* move the container to the right */
+    position: relative;
+    max-height: fit-content;
+    text-align: left;
+    font-size: 1.5rem;
+    padding: 3rem;
+  }
+
+  .socials::before {
+    content: '';
+    position: absolute;
+    background-color: rgb(255,255,255,0.15);
+    inset: 0;
+    transform: rotate(-5deg);
+    z-index: -1;
+  }
+
+  .socials h2::after {
+    content: '';
+    display: block;
+    margin: 1rem 0; /* Adjusts space around the line */
+    height: 3px; /* Line thickness */
+    background-color: #000000; /* Line color */
+    width: 100%; /* Line width */
+  }
+
+  .send-message h2 {
+    text-align: center;
+  }
+
+  .send-message {
+    width: 30%; 
+    background-color: rgb(255,255,255,0.5);
+    border-radius: 0.2rem;
+    /* move the container to the right */
+    position: relative;
+    max-height: fit-content;
+    text-align: left;
+    font-size: 1.5rem;
+    padding: 3rem;
+  }
+
+  .send-message::before {
+    content: '';
+    position: absolute;
+    background-color: rgb(255,255,255,0.15);
+    inset: 0;
+    transform: rotate(-5deg);
+    z-index: -1;
+  }
+
+  .send-message h2::after {
+    content: '';
+    display: block;
+    margin: 1rem 0; /* Adjusts space around the line */
+    height: 3px; /* Line thickness */
+    background-color: #000000; /* Line color */
+    width: 100%; /* Line width */
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* move the containers away from the edges of the screen */
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 10rem;
+  }
+
+  .icon {
+    text-decoration: none;
+    color: rgb(0,0,0);
+    font-size: 2rem;
+    padding-right: 1rem;
+  }
+
+  .text {
+    text-decoration: none;
+    color: black;
+}
+
+/* Since the .text class is used within <a> elements, you need to specifically target them to remove the text decoration */
+.text a {
+    text-decoration: none;
+    color: black;
+}
+
+.text a:hover {
+    color : rgb(0,0,0,0.5);
+
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* move the containers away from the edges of the screen */
+}
+
+.research-container h2 {
+  text-align: center;
+}
+
+.research-container {
+  width: 30%;
+  background-color: rgb(255,255,255,0.5);
+  border-radius: 0.2rem;
+  /* move the container to the right */
+  position: relative;
+  max-height: fit-content;
+  text-align: left;
+  font-size: 1.5rem;
+  padding: 3rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-top: 10rem;
+}
+
+.research-container::before {
+  content: '';
+  position: absolute;
+  background-color: rgb(255,255,255,0.15);
+  inset: 0;
+  transform: rotate(-5deg);
+  z-index: -1;
+}
+
+.research-container h2::after {
+  content: '';
+  display: block;
+  margin: 1rem 0; /* Adjusts space around the line */
+  height: 3px; /* Line thickness */
+  background-color: #000000; /* Line color */
+  width: 100%; /* Line width */
+}
+
+.side-projects-container h2 {
+  text-align: center;
+}
+
+.side-projects-container {
+  width: 30%; 
+  background-color: rgb(255,255,255,0.5);
+  border-radius: 0.2rem;
+  /* move the container to the right */
+  position: relative;
+  max-height: fit-content;
+  text-align: left;
+  font-size: 1.5rem;
+  padding: 3rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-top: 10rem;
+}
+
+.side-projects-container::before {
+  content: '';
+  position: absolute;
+  background-color: rgb(255,255,255,0.15);
+  inset: 0;
+  transform: rotate(-5deg);
+  z-index: -1;
+}
+
+.side-projects-container h2::after {
+  content: '';
+  display: block;
+  margin: 1rem 0; /* Adjusts space around the line */
+  height: 3px; /* Line thickness */
+  background-color: #000000; /* Line color */
+  width: 100%; /* Line width */
+}
+
+.projects-container a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Since the .text class is used within <a> elements, you need to specifically target them to remove the text decoration */
+.projects-container a {
+  text-decoration: none;
+  color: black;
+}
+
+.projects-container a:hover {
+  color : rgb(0,0,0,0.5);
+
+}
+
+.summarized-container h2 {
+  text-align: center;
+}
+
+.summarized-container {
+  width: 30%; 
+  background-color: rgb(255,255,255,0.5);
+  border-radius: 0.2rem;
+  /* move the container to the right */
+  position: relative;
+  max-height: fit-content;
+  text-align: left;
+  font-size: 1.5rem;
+  padding: 3rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-top: 4rem;
+}
+
+.summarized-container a {
+  text-decoration: none;
+  color: black;
+}
+
+.summarized-container a:hover {
+  color : rgb(0,0,0,0.5);
+
+}
+
+.summarized-container::before {
+  content: '';
+  position: absolute;
+  background-color: rgb(255,255,255,0.15);
+  inset: 0;
+  transform: rotate(-5deg);
+  z-index: -1;
+}
+
+.summarized-container h2::after {
+  content: '';
+  display: block;
+  margin: 1rem 0; /* Adjusts space around the line */
+  height: 3px; /* Line thickness */
+  background-color: #000000; /* Line color */
+  width: 100%; /* Line width */
+}
+
+.grouppic-container img{
+  max-width: 40%;
+  border-radius: 10%;
+  float: right;
+  margin-right: 3rem;
+  margin-top: 3rem;
+}
+
+.totalsum-container {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.two-container h2 {
+  text-align: center;
+}
+
+.two-container {
+  width: 30%; 
+  background-color: rgb(255,255,255,0.5);
+  border-radius: 0.2rem;
+  /* move the container to the right */
+  position: relative;
+  max-height: fit-content;
+  text-align: left;
+  font-size: 1.5rem;
+  padding: 3rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-top: 4rem;
+}
+
+.two-container a {
+  text-decoration: none;
+  color: black;
+}
+
+.two-container a:hover {
+  color : rgb(0,0,0,0.5);
+
+}
+
+.two-container::before {
+  content: '';
+  position: absolute;
+  background-color: rgb(255,255,255,0.15);
+  inset: 0;
+  transform: rotate(-5deg);
+  z-index: -1;
+}
+
+.two-container h2::after {
+  content: '';
+  display: block;
+  margin: 1rem 0; /* Adjusts space around the line */
+  height: 3px; /* Line thickness */
+  background-color: #000000; /* Line color */
+  width: 100%; /* Line width */
+}
+
+.twopic-container img{
+  max-width: 40%;
+  border-radius: 10%;
+  float: right;
+  margin-right: 3rem;
+  margin-top: 3rem;
+}
+
+.totaltwo-container {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+
+}
+
+.minesweeper-container h2 {
+  text-align: center;
+}
+
+.minesweeper-container {
+  width: 30%; 
+  background-color: rgb(255,255,255,0.5);
+  border-radius: 0.2rem;
+  /* move the container to the right */
+  position: relative;
+  max-height: fit-content;
+  text-align: left;
+  font-size: 1.5rem;
+  padding: 3rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-top: 4rem;
+}
+
+.minesweeper-container a {
+  text-decoration: none;
+  color: black;
+}
+
+.minesweeper-container a:hover {
+  color : rgb(0,0,0,0.5);
+
+}
+
+.minesweeper-container::before {
+  content: '';
+  position: absolute;
+  background-color: rgb(255,255,255,0.15);
+  inset: 0;
+  transform: rotate(-5deg);
+  z-index: -1;
+}
+
+.minesweeper-container h2::after {
+  content: '';
+  display: block;
+  margin: 1rem 0; /* Adjusts space around the line */
+  height: 3px; /* Line thickness */
+  background-color: #000000; /* Line color */
+  width: 100%; /* Line width */
+}
+
+.minepic-container img{
+  max-width: 40%;
+  border-radius: 10%;
+  float: right;
+  margin-right: 3rem;
+  margin-top: 1rem;
+}
+
+.totalminesweeper-container {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quantum-container h2 {
+  text-align: center;
+}
+
+.quantum-container {
+  width: 30%; 
+  background-color: rgb(255,255,255,0.5);
+  border-radius: 0.2rem;
+  /* move the container to the right */
+  position: relative;
+  max-height: fit-content;
+  text-align: left;
+  font-size: 1.5rem;
+  padding: 3rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-top: 10rem;
+}
+
+.quantum-container a {
+  text-decoration: none;
+  color: black;
+}
+
+.quantum-container a:hover {
+  color : rgb(0,0,0,0.5);
+
+}
+
+.quantum-container::before {
+  content: '';
+  position: absolute;
+  background-color: rgb(255,255,255,0.15);
+  inset: 0;
+  transform: rotate(-5deg);
+  z-index: -1;
+}
+
+.quantum-container h2::after {
+  content: '';
+  display: block;
+  margin: 1rem 0; /* Adjusts space around the line */
+  height: 3px; /* Line thickness */
+  background-color: #000000; /* Line color */
+  width: 100%; /* Line width */
+}
+
+.yannick-container img{
+  max-width: 40%;
+  border-radius: 10%;
+  float: right;
+  margin-right: 3rem;
+  margin-top: 0rem;
+}
+
+.total-quantum-container {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+
+}
+
+.quantum-proposal h2 {
+  text-align: center;
+}
+
+.quantum-proposal {
+  width: 80%; 
+  background-color: rgb(255,255,255,0.5);
+  border-radius: 0.2rem;
+  /* move the container to the right */
+  position: relative;
+  max-height: fit-content;
+  text-align: left;
+  font-size: 1.5rem;
+  padding: 3rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-top: 10rem;
+}
+
+.quantum-proposal a {
+  text-decoration: none;
+  color: black;
+}
+
+.quantum-proposal a:hover {
+  color : rgb(0,0,0,0.5);
+
+}
+
+.quantum-proposal::before {
+  content: '';
+  position: absolute;
+  background-color: rgb(255,255,255,0.15);
+  inset: 0;
+  transform: rotate(-2deg);
+  z-index: -1;
+}
+
+.quantum-proposal h2::after {
+  content: '';
+  display: block;
+  margin: 1rem 0; /* Adjusts space around the line */
+  height: 3px; /* Line thickness */
+  background-color: #000000; /* Line color */
+  width: 100%; /* Line width */
+}
+
+.quantum-proposal h4 {
+  font-size: 2rem;
+  text-emphasis: bold;
+  text-align: center;
+}
+
+.resources-container h2 {
+  text-align: center;
+}
+
+.resources-container {
+  width: 80%; 
+  background-color: rgb(255,255,255,0.5);
+  border-radius: 0.2rem;
+  /* move the container to the right */
+  position: relative;
+  max-height: fit-content;
+  text-align: left;
+  font-size: 1.5rem;
+  padding: 3rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-top: 10rem;
+}
+
+.resources-container a {
+  text-decoration: none;
+  color: black;
+}
+
+.resources-container a:hover {
+  color : rgb(0,0,0,0.5);
+
+}
+
+.resources-container::before {
+  content: '';
+  position: absolute;
+  background-color: rgb(255,255,255,0.15);
+  inset: 0;
+  transform: rotate(-2deg);
+  z-index: -1;
+}
+
+.resources-container h2::after {
+  content: '';
+  display: block;
+  margin: 1rem 0; /* Adjusts space around the line */
+  height: 3px; /* Line thickness */
+  background-color: #000000; /* Line color */
+  width: 100%; /* Line width */
+}
+
+.resources-container h4 {
+  font-size: 2rem;
+  text-emphasis: bold;
+}
+
+.video-container {
+  float: right;
+  margin-right: 3rem;
+  margin-top: 12rem;
+}
+
+.video-details h2 {
+  text-align: center;
+}
+
+.video-details {
+  width: 30%; 
+  background-color: rgb(255,255,255,0.5);
+  border-radius: 0.2rem;
+  /* move the container to the right */
+  position: relative;
+  max-height: fit-content;
+  text-align: left;
+  font-size: 1.5rem;
+  padding: 3rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-top: 10rem;
+}
+
+.video-details a {
+  text-decoration: none;
+  color: black;
+}
+
+.video-details a:hover {
+  color : rgb(0,0,0,0.5);
+
+}
+
+.video-details::before {
+  content: '';
+  position: absolute;
+  background-color: rgb(255,255,255,0.15);
+  inset: 0;
+  transform: rotate(-5deg);
+  z-index: -1;
+}
+
+.video-details h2::after {
+  content: '';
+  display: block;
+  margin: 1rem 0; /* Adjusts space around the line */
+  height: 3px; /* Line thickness */
+  background-color: #000000; /* Line color */
+  width: 100%; /* Line width */
+}
+
+.further-context h2 {
+  text-align: center;
+}
+
+.further-context {
+  width: 80%; 
+  background-color: rgb(255,255,255,0.5);
+  border-radius: 0.2rem;
+  /* move the container to the right */
+  position: relative;
+  max-height: fit-content;
+  text-align: left;
+  font-size: 1.5rem;
+  padding: 3rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-top: 10rem;
+}
+
+.further-context a {
+  text-decoration: none;
+  color: black;
+}
+
+.further-context a:hover {
+  color : rgb(0,0,0,0.5);
+
+}
+
+.further-context::before {
+  content: '';
+  position: absolute;
+  background-color: rgb(255,255,255,0.15);
+  inset: 0;
+  transform: rotate(-2deg);
+  z-index: -1;
+}
+
+.further-context h2::after {
+  content: '';
+  display: block;
+  margin: 1rem 0; /* Adjusts space around the line */
+  height: 3px; /* Line thickness */
+  background-color: #000000; /* Line color */
+  width: 100%; /* Line width */
+}
+
+.further-context h4 {
+  font-size: 2rem;
+  text-emphasis: bold;
+}
+
+}
