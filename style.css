@@ -36,16 +36,18 @@ nav {
 nav a {
   color: rgb(255,255,255,0.5);
   text-decoration: none;
-  padding: 0rem 1.8rem; /* Reduced padding for smaller screens */
+  padding: 0rem 0.8rem; /* Reduced padding for smaller screens */
   font-weight: bold;
   font-size: 1rem; /* Reduced font size for smaller screens */
   transition: color 0.3s ease-in-out;
+  
 }
 
 nav a:hover {
   color: rgb(255,255,255,1);
 }
 
+@media (min-width: 1px){
 .cover-image-container {
   text-align: center; /* Center the image on small screens */
   margin-top: 2rem; /* Reduced margin for smaller screens */
@@ -84,271 +86,264 @@ nav a:hover {
   text-align: center;
 }
 
+.cover-image-container img {
+  max-width: 80%; /* Ensure the image is not larger than the container */
+  height: auto;
+  border-radius: 20%;
+}
 
+.intro h1 {
+  padding-top: 2rem;
+  padding-bottom: 0rem;
+  text-align: center;
+  font-size: 2rem;
+}
 
-/* Large screens (large laptops, desktops) */
-@media (min-width: 992px) {
-  nav {
-      padding: 0.5rem 3rem; /* Increase padding for larger screens */
-  }
+.intro p {
+  padding-right: 0rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
 
-  nav a {
-      padding: 0.2rem 12rem;
-      font-size: 1.5rem;
-  }
+.intro {
+  justify-content: center;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
 
-  .cover-image-container img {
-    max-width: 100%; /* Ensure the image is not larger than the container */
-    height: auto;
-    border-radius: 20%;
-  }
-
-  .cover-image-container {
-      float: right;
-      margin-right: 3rem;
-      margin-top: 5rem; /* Adjusted for better spacing on large screens */
-  }
-
-  .intro h1 {
-    padding-top: 2rem;
-    padding-bottom: 0rem;
-    text-align: center;
-    font-size: 3rem;
-  }
-
-  .intro p {
-    padding-right: 0rem;
-    text-align: center;
-    font-size: 1.2rem;
-  }
-
-  .intro {
-    justify-content: center;
-    align-items: center;
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
-  .content-container {
-    width: 40%;
-    background-color: rgb(255,255,255,0.5);
-    border-radius: 0.2rem;
-    padding-left: 0rem;
-    /* move the container to the right */
-    margin-left: 13rem;
-    margin-top: 4.5rem;
-    position: relative;
-    max-height: fit-content;
-    text-align: left;
-    font-size: 1.5rem;
-
-
-  }
-
+.content-container {
+  width: 70%;
+  background-color: rgb(255,255,255,0.5);
+  border-radius: 0.2rem;
+  padding-left: 0rem;
+  /* move the container to the right */
+  position: relative;
+  max-height: fit-content;
+  text-align: left;
+  font-size: 1rem;
+  margin-left: 10%;
+  padding: 5%;
   
-  .content-container::before {
-    content: '';
-    position: absolute;
-    background-color: rgb(255,255,255,0.15);
-    inset: 0;
-    transform: rotate(-5deg);
-    z-index: -1;
-  }
 
-  .intro h1::after {
-    /* add vertical line for the larger screen */
-    content: '';
-    display: block;
-    margin: 1rem 0; /* Adjusts space around the line */
-    height: 3px; /* Line thickness */
-    background-color: #000000; /* Line color */
-    width: 100%; /* Line width */
-  }
 
-  .about-me h2 {
-    text-align: center;
-  }
+}
 
-  .about-me h4 {
-    text-align: center;
-    color: rgb(0,0,0,1);
-  }
 
-  .about-me {
-    margin-left: 10rem;
-    margin-top: 10rem;
-    margin-bottom: 10rem;
-    width: 75%;
-    background-color: rgb(255,255,255,0.5);
-    border-radius: 0.2rem;
-    /* move the container to the right */
-    position: relative;
-    max-height: fit-content;
-    text-align: left;
-    font-size: 1.5rem;
-    padding: 3rem;
-  }
+.content-container::before {
+  content: '';
+  position: absolute;
+  background-color: rgb(255,255,255,0.15);
+  inset: 0;
+  transform: rotate(-2deg);
+  z-index: -1;
+}
 
-  .about-me::before {
-    content: '';
-    position: absolute;
-    background-color: rgb(255,255,255,0.15);
-    inset: 0;
-    transform: rotate(-3deg);
-    z-index: -1;
-  }
+.intro h1::after {
+  /* add vertical line for the larger screen */
+  content: '';
+  display: block;
+  margin: 1rem 0; /* Adjusts space around the line */
+  height: 3px; /* Line thickness */
+  background-color: #000000; /* Line color */
+  width: 100%; /* Line width */
+}
 
-  .about-me h2::after {
-    content: '';
-    display: block;
-    margin: 1rem 0; /* Adjusts space around the line */
-    height: 3px; /* Line thickness */
-    background-color: #000000; /* Line color */
-    width: 100%; /* Line width */
-  }
+.about-me h2 {
+  text-align: center;
+  font-size: 2rem;
+}
 
-  .accolades h2 {
-    text-align: center;
-  }
+.about-me h4 {
+  font-size: 1.5rem;
+  text-align: center;
+  color: rgb(0,0,0,1);
+}
 
-  .accolades {
-    margin-left: 10rem;
-    margin-top: 10rem;
-    margin-bottom: 10rem;
-    width: 75%;
-    background-color: rgb(255,255,255,0.5);
-    border-radius: 0.2rem;
-    /* move the container to the right */
-    position: relative;
-    max-height: fit-content;
-    text-align: left;
-    font-size: 1.5rem;
-    padding: 3rem;
-  }
+.about-me {
+  margin-top: 10%;
+  width: 70%;
+  background-color: rgb(255,255,255,0.5);
+  border-radius: 0.2rem;
+  /* move the container to the right */
+  position: relative;
+  max-height: fit-content;
+  text-align: left;
+  font-size: 1rem;
+  padding: 5%;
+  margin-left: 10%;
+  
+}
 
-  .accolades::before {
-    content: '';
-    position: absolute;
-    background-color: rgb(255,255,255,0.15);
-    inset: 0;
-    transform: rotate(-5deg);
-    z-index: -1;
-  }
+.about-me::before {
+  content: '';
+  position: absolute;
+  background-color: rgb(255,255,255,0.15);
+  inset: 0;
+  transform: rotate(-0.5deg);
+  z-index: -1;
+}
 
-  .accolades h2::after {
-    content: '';
-    display: block;
-    margin: 1rem 0; /* Adjusts space around the line */
-    height: 3px; /* Line thickness */
-    background-color: #000000; /* Line color */
-    width: 100%; /* Line width */
-  }
+.about-me h2::after {
+  content: '';
+  display: block;
+  margin: 1rem 0; /* Adjusts space around the line */
+  height: 3px; /* Line thickness */
+  background-color: #000000; /* Line color */
+  width: 100%; /* Line width */
+}
 
-  .socials h2 {
-    text-align: center;
-  }
 
-  .socials {
-    width: 30%;
-    background-color: rgb(255,255,255,0.5);
-    border-radius: 0.2rem;
-    /* move the container to the right */
-    position: relative;
-    max-height: fit-content;
-    text-align: left;
-    font-size: 1.5rem;
-    padding: 3rem;
-  }
+.accolades h2 {
+  text-align: center;
+  font-size: 2rem;
+}
 
-  .socials::before {
-    content: '';
-    position: absolute;
-    background-color: rgb(255,255,255,0.15);
-    inset: 0;
-    transform: rotate(-5deg);
-    z-index: -1;
-  }
+.accolades h4 {
+  font-size: 1.5rem;
+  text-align: center;
+  color: rgb(0,0,0,1);
+}
 
-  .socials h2::after {
-    content: '';
-    display: block;
-    margin: 1rem 0; /* Adjusts space around the line */
-    height: 3px; /* Line thickness */
-    background-color: #000000; /* Line color */
-    width: 100%; /* Line width */
-  }
+.accolades {
+  margin-top: 10%;
+  width: 70%;
+  background-color: rgb(255,255,255,0.5);
+  border-radius: 0.2rem;
+  /* move the container to the right */
+  position: relative;
+  max-height: fit-content;
+  text-align: left;
+  font-size: 1rem;
+  padding: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
 
-  .send-message h2 {
-    text-align: center;
-  }
+.accolades::before {
+  content: '';
+  position: absolute;
+  background-color: rgb(255,255,255,0.15);
+  inset: 0;
+  transform: rotate(-1deg);
+  z-index: -1;
+}
 
-  .send-message {
-    width: 30%; 
-    background-color: rgb(255,255,255,0.5);
-    border-radius: 0.2rem;
-    /* move the container to the right */
-    position: relative;
-    max-height: fit-content;
-    text-align: left;
-    font-size: 1.5rem;
-    padding: 3rem;
-  }
+.accolades h2::after {
+  content: '';
+  display: block;
+  margin: 1rem 0; /* Adjusts space around the line */
+  height: 3px; /* Line thickness */
+  background-color: #000000; /* Line color */
+  width: 100%; /* Line width */
+}
 
-  .send-message::before {
-    content: '';
-    position: absolute;
-    background-color: rgb(255,255,255,0.15);
-    inset: 0;
-    transform: rotate(-5deg);
-    z-index: -1;
-  }
+.socials h2 {
+  text-align: center;
+}
 
-  .send-message h2::after {
-    content: '';
-    display: block;
-    margin: 1rem 0; /* Adjusts space around the line */
-    height: 3px; /* Line thickness */
-    background-color: #000000; /* Line color */
-    width: 100%; /* Line width */
-  }
+.socials {
+  width: 80%;
+  background-color: rgb(255,255,255,0.5);
+  border-radius: 0.2rem;
+  /* move the container to the right */
+  position: relative;
+  max-height: fit-content;
+  text-align: left;
+  font-size: 0.9rem;
+  padding: 3rem;
+  margin-bottom: 10%;
+}
 
-  .contact-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    /* move the containers away from the edges of the screen */
-    margin-left: 10rem;
-    margin-right: 10rem;
-    margin-top: 10rem;
-  }
+.socials::before {
+  content: '';
+  position: absolute;
+  background-color: rgb(255,255,255,0.15);
+  inset: 0;
+  transform: rotate(-5deg);
+  z-index: -1;
+}
 
-  .icon {
-    text-decoration: none;
-    color: rgb(0,0,0);
-    font-size: 2rem;
-    padding-right: 1rem;
-  }
+.socials h2::after {
+  content: '';
+  display: block;
+  margin: 1rem 0; /* Adjusts space around the line */
+  height: 3px; /* Line thickness */
+  background-color: #000000; /* Line color */
+  width: 100%; /* Line width */
+}
 
-  .text {
-    text-decoration: none;
-    color: black;
+.send-message h2 {
+  text-align: center;
+}
+
+.send-message {
+  width: 80%; 
+  background-color: rgb(255,255,255,0.5);
+  border-radius: 0.2rem;
+  /* move the container to the right */
+  position: relative;
+  max-height: fit-content;
+  text-align: left;
+  font-size: 0.7rem;
+  padding: 3rem;
+}
+
+.send-message::before {
+  content: '';
+  position: absolute;
+  background-color: rgb(255,255,255,0.15);
+  inset: 0;
+  transform: rotate(-5deg);
+  z-index: -1;
+}
+
+.send-message h2::after {
+  content: '';
+  display: block;
+  margin: 1rem 0; /* Adjusts space around the line */
+  height: 3px; /* Line thickness */
+  background-color: #000000; /* Line color */
+  width: 100%; /* Line width */
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* move the containers away from the edges of the screen */
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10%;
+}
+
+.icon {
+  text-decoration: none;
+  color: rgb(0,0,0);
+  font-size: 2rem;
+  padding-right: 1rem;
+}
+
+.text {
+  text-decoration: none;
+  color: black;
 }
 
 /* Since the .text class is used within <a> elements, you need to specifically target them to remove the text decoration */
 .text a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .text a:hover {
-    color : rgb(0,0,0,0.5);
+  color : rgb(0,0,0,0.5);
 
 }
 
 .projects-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   /* move the containers away from the edges of the screen */
@@ -359,18 +354,19 @@ nav a:hover {
 }
 
 .research-container {
-  width: 30%;
+  width: 60%;
   background-color: rgb(255,255,255,0.5);
   border-radius: 0.2rem;
   /* move the container to the right */
   position: relative;
   max-height: fit-content;
   text-align: left;
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding: 3rem;
-  margin-left: 10rem;
-  margin-right: 10rem;
-  margin-top: 10rem;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10%;
+
 }
 
 .research-container::before {
@@ -396,18 +392,18 @@ nav a:hover {
 }
 
 .side-projects-container {
-  width: 30%; 
+  width: 60%; 
   background-color: rgb(255,255,255,0.5);
   border-radius: 0.2rem;
   /* move the container to the right */
   position: relative;
   max-height: fit-content;
   text-align: left;
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding: 3rem;
-  margin-left: 10rem;
-  margin-right: 10rem;
-  margin-top: 10rem;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10%;
 }
 
 .side-projects-container::before {
@@ -449,18 +445,17 @@ nav a:hover {
 }
 
 .summarized-container {
-  width: 30%; 
+  margin-top: 10%;
+  width: 70%;
   background-color: rgb(255,255,255,0.5);
   border-radius: 0.2rem;
   /* move the container to the right */
   position: relative;
   max-height: fit-content;
   text-align: left;
-  font-size: 1.5rem;
-  padding: 3rem;
-  margin-left: 10rem;
-  margin-right: 10rem;
-  margin-top: 4rem;
+  font-size: 1rem;
+  padding: 5%;
+  margin-left: 10%;
 }
 
 .summarized-container a {
@@ -491,18 +486,20 @@ nav a:hover {
   width: 100%; /* Line width */
 }
 
+.grouppic-container {
+  display:flex;
+  justify-content: center;
+}
+
 .grouppic-container img{
-  max-width: 40%;
+  max-width: 80%;
   border-radius: 10%;
-  float: right;
-  margin-right: 3rem;
-  margin-top: 3rem;
+  max-height: 450px;
+  margin-top: 10%;
 }
 
 .totalsum-container {
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
 }
 
 .two-container h2 {
@@ -510,18 +507,17 @@ nav a:hover {
 }
 
 .two-container {
-  width: 30%; 
+  margin-top: 10%;
+  width: 70%;
   background-color: rgb(255,255,255,0.5);
   border-radius: 0.2rem;
   /* move the container to the right */
   position: relative;
   max-height: fit-content;
   text-align: left;
-  font-size: 1.5rem;
-  padding: 3rem;
-  margin-left: 10rem;
-  margin-right: 10rem;
-  margin-top: 4rem;
+  font-size: 1rem;
+  padding: 5%;
+  margin-left: 10%;
 }
 
 .two-container a {
@@ -552,20 +548,20 @@ nav a:hover {
   width: 100%; /* Line width */
 }
 
+.twopic-container {
+  display:flex;
+  justify-content: center;
+}
+
 .twopic-container img{
-  max-width: 40%;
+  max-width: 80%;
   border-radius: 10%;
-  float: right;
-  margin-right: 3rem;
-  margin-top: 3rem;
+  margin-top: 10%;
+  max-height: 450px;
 }
 
 .totaltwo-container {
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-
-
+  flex-direction: column;
 }
 
 .minesweeper-container h2 {
@@ -573,18 +569,17 @@ nav a:hover {
 }
 
 .minesweeper-container {
-  width: 30%; 
+  margin-top: 10%;
+  width: 70%;
   background-color: rgb(255,255,255,0.5);
   border-radius: 0.2rem;
   /* move the container to the right */
   position: relative;
   max-height: fit-content;
   text-align: left;
-  font-size: 1.5rem;
-  padding: 3rem;
-  margin-left: 10rem;
-  margin-right: 10rem;
-  margin-top: 4rem;
+  font-size: 1rem;
+  padding: 5%;
+  margin-left: 10%;
 }
 
 .minesweeper-container a {
@@ -615,38 +610,37 @@ nav a:hover {
   width: 100%; /* Line width */
 }
 
+.minepic-container {
+  display:flex;
+  justify-content: center;
+  
+}
+
 .minepic-container img{
-  max-width: 40%;
+  max-width: 80%;
   border-radius: 10%;
-  float: right;
-  margin-right: 3rem;
-  margin-top: 1rem;
+  margin-top: 10%;
+  max-height: 450px;
 }
 
 .totalminesweeper-container {
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.quantum-container h2 {
-  text-align: center;
+  flex-direction: column;
 }
 
 .quantum-container {
-  width: 30%; 
+  margin-top: 10%;
+  width: 70%;
   background-color: rgb(255,255,255,0.5);
   border-radius: 0.2rem;
   /* move the container to the right */
   position: relative;
   max-height: fit-content;
   text-align: left;
-  font-size: 1.5rem;
-  padding: 3rem;
-  margin-left: 10rem;
-  margin-right: 10rem;
-  margin-top: 10rem;
+  font-size: 1rem;
+  padding: 5%;
+  margin-left: 10%;
 }
+
 
 .quantum-container a {
   text-decoration: none;
@@ -676,12 +670,16 @@ nav a:hover {
   width: 100%; /* Line width */
 }
 
+.yannick-container{
+  display:flex;
+  justify-content: center;
+}
+
 .yannick-container img{
-  max-width: 40%;
+  max-width: 80%;
   border-radius: 10%;
-  float: right;
-  margin-right: 3rem;
-  margin-top: 0rem;
+  margin-top: 10%;
+  max-height: 450px;
 }
 
 .total-quantum-container {
@@ -697,18 +695,17 @@ nav a:hover {
 }
 
 .quantum-proposal {
-  width: 80%; 
+  margin-top: 10%;
+  width: 70%;
   background-color: rgb(255,255,255,0.5);
   border-radius: 0.2rem;
   /* move the container to the right */
   position: relative;
   max-height: fit-content;
   text-align: left;
-  font-size: 1.5rem;
-  padding: 3rem;
-  margin-left: 10rem;
-  margin-right: 10rem;
-  margin-top: 10rem;
+  font-size: 1rem;
+  padding: 5%;
+  margin-left: 10%;
 }
 
 .quantum-proposal a {
@@ -726,7 +723,7 @@ nav a:hover {
   position: absolute;
   background-color: rgb(255,255,255,0.15);
   inset: 0;
-  transform: rotate(-2deg);
+  transform: rotate(-1deg);
   z-index: -1;
 }
 
@@ -740,7 +737,7 @@ nav a:hover {
 }
 
 .quantum-proposal h4 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-emphasis: bold;
   text-align: center;
 }
@@ -750,18 +747,17 @@ nav a:hover {
 }
 
 .resources-container {
-  width: 80%; 
+  margin-top: 10%;
+  width: 70%;
   background-color: rgb(255,255,255,0.5);
   border-radius: 0.2rem;
   /* move the container to the right */
   position: relative;
   max-height: fit-content;
   text-align: left;
-  font-size: 1.5rem;
-  padding: 3rem;
-  margin-left: 10rem;
-  margin-right: 10rem;
-  margin-top: 10rem;
+  font-size: 1rem;
+  padding: 5%;
+  margin-left: 10%;
 }
 
 .resources-container a {
@@ -797,10 +793,18 @@ nav a:hover {
   text-emphasis: bold;
 }
 
+.small-video-container {
+  /* make the video fit the screen for smaller displays */
+  width: 100%;
+  height: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  justify-content: center;
+  display: flex;
+
+}
 .video-container {
-  float: right;
-  margin-right: 3rem;
-  margin-top: 12rem;
+  display:none;
 }
 
 .video-details h2 {
@@ -808,18 +812,17 @@ nav a:hover {
 }
 
 .video-details {
-  width: 30%; 
+  margin-top: 10%;
+  width: 70%;
   background-color: rgb(255,255,255,0.5);
   border-radius: 0.2rem;
   /* move the container to the right */
   position: relative;
   max-height: fit-content;
   text-align: left;
-  font-size: 1.5rem;
-  padding: 3rem;
-  margin-left: 10rem;
-  margin-right: 10rem;
-  margin-top: 10rem;
+  font-size: 1rem;
+  padding: 5%;
+  margin-left: 10%;
 }
 
 .video-details a {
@@ -855,18 +858,17 @@ nav a:hover {
 }
 
 .further-context {
-  width: 80%; 
+  margin-top: 10%;
+  width: 70%;
   background-color: rgb(255,255,255,0.5);
   border-radius: 0.2rem;
   /* move the container to the right */
   position: relative;
   max-height: fit-content;
   text-align: left;
-  font-size: 1.5rem;
-  padding: 3rem;
-  margin-left: 10rem;
-  margin-right: 10rem;
-  margin-top: 10rem;
+  font-size: 1rem;
+  padding: 5%;
+  margin-left: 10%;
 }
 
 .further-context a {
@@ -904,6 +906,196 @@ nav a:hover {
 
 }
 
+@media(min-width: 440px){
+  nav a {
+  padding: 0rem 10%;
+  }
+}
+
+
+@media (min-width: 800px) {
+  .projects-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* move the containers away from the edges of the screen */
+  }
+  
+  .research-container h2 {
+    text-align: center;
+  }
+  
+  .research-container {
+    width: 30%;
+    background-color: rgb(255,255,255,0.5);
+    border-radius: 0.2rem;
+    /* move the container to the right */
+    position: relative;
+    max-height: fit-content;
+    text-align: left;
+    font-size: 1.5rem;
+    padding: 3rem;
+    margin-left: 10%;
+  }
+  
+  .research-container::before {
+    content: '';
+    position: absolute;
+    background-color: rgb(255,255,255,0.15);
+    inset: 0;
+    transform: rotate(-5deg);
+    z-index: -1;
+  }
+  
+  .research-container h2::after {
+    content: '';
+    display: block;
+    margin: 1rem 0; /* Adjusts space around the line */
+    height: 3px; /* Line thickness */
+    background-color: #000000; /* Line color */
+    width: 100%; /* Line width */
+  }
+  
+  .side-projects-container h2 {
+    text-align: center;
+  }
+  
+  .side-projects-container {
+    width: 30%; 
+    background-color: rgb(255,255,255,0.5);
+    border-radius: 0.2rem;
+    /* move the container to the right */
+    position: relative;
+    max-height: fit-content;
+    text-align: left;
+    font-size: 1.5rem;
+    padding: 3rem;
+    margin-right: 10%;
+  }
+  
+  .side-projects-container::before {
+    content: '';
+    position: absolute;
+    background-color: rgb(255,255,255,0.15);
+    inset: 0;
+    transform: rotate(-5deg);
+    z-index: -1;
+  }
+  
+  .side-projects-container h2::after {
+    content: '';
+    display: block;
+    margin: 1rem 0; /* Adjusts space around the line */
+    height: 3px; /* Line thickness */
+    background-color: #000000; /* Line color */
+    width: 100%; /* Line width */
+  }
+
+  .socials h2 {
+    text-align: center;
+  }
+
+  .socials {
+    width: 30%;
+    background-color: rgb(255,255,255,0.5);
+    border-radius: 0.2rem;
+    /* move the container to the right */
+    position: relative;
+    max-height: fit-content;
+    text-align: left;
+    font-size: 1rem;
+    padding: 3rem;
+    margin-top: 10%;
+  }
+
+  .socials::before {
+    content: '';
+    position: absolute;
+    background-color: rgb(255,255,255,0.15);
+    inset: 0;
+    transform: rotate(-5deg);
+    z-index: -1;
+  }
+
+  .socials h2::after {
+    content: '';
+    display: block;
+    margin: 1rem 0; /* Adjusts space around the line */
+    height: 3px; /* Line thickness */
+    background-color: #000000; /* Line color */
+    width: 100%; /* Line width */
+  }
+
+  .send-message h2 {
+    text-align: center;
+  }
+
+  .send-message {
+    width: 30%; 
+    background-color: rgb(255,255,255,0.5);
+    border-radius: 0.2rem;
+    /* move the container to the right */
+    position: relative;
+    max-height: fit-content;
+    text-align: left;
+    font-size: 1rem;
+    padding: 3rem;
+  }
+
+  .send-message::before {
+    content: '';
+    position: absolute;
+    background-color: rgb(255,255,255,0.15);
+    inset: 0;
+    transform: rotate(-5deg);
+    z-index: -1;
+  }
+
+  .send-message h2::after {
+    content: '';
+    display: block;
+    margin: 1rem 0; /* Adjusts space around the line */
+    height: 3px; /* Line thickness */
+    background-color: #000000; /* Line color */
+    width: 100%; /* Line width */
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .icon {
+    text-decoration: none;
+    color: rgb(0,0,0);
+    font-size: 1rem;
+    padding-right: 1rem;
+  }
+
+  .text {
+    text-decoration: none;
+    color: black;
+}
+
+/* Since the .text class is used within <a> elements, you need to specifically target them to remove the text decoration */
+.text a {
+    text-decoration: none;
+    color: black;
+}
+
+.text a:hover {
+    color : rgb(0,0,0,0.5);
+
+}
+}
+
+
+
+
+/* Large screens (large laptops, desktops) */
 @media (min-width: 1440px) {
   nav {
       padding: 0.5rem 3rem; /* Increase padding for larger screens */
@@ -922,8 +1114,8 @@ nav a:hover {
 
   .cover-image-container {
       float: right;
-      margin-right: 13rem;
-      margin-top: 5rem; /* Adjusted for better spacing on large screens */
+      margin-right: 5%;
+      margin-top: 10%; /* Adjusted for better spacing on large screens */
   }
 
   .intro h1 {
@@ -1308,6 +1500,11 @@ nav a:hover {
   width: 100%; /* Line width */
 }
 
+.grouppic-container {
+  display:block;
+  
+}
+
 .grouppic-container img{
   max-width: 40%;
   border-radius: 10%;
@@ -1367,6 +1564,11 @@ nav a:hover {
   height: 3px; /* Line thickness */
   background-color: #000000; /* Line color */
   width: 100%; /* Line width */
+}
+
+.twopic-container {
+  display:block;
+  
 }
 
 .twopic-container img{
@@ -1432,6 +1634,11 @@ nav a:hover {
   width: 100%; /* Line width */
 }
 
+.minepic-container {
+  display:block;
+  
+}
+
 .minepic-container img{
   max-width: 40%;
   border-radius: 10%;
@@ -1493,12 +1700,17 @@ nav a:hover {
   width: 100%; /* Line width */
 }
 
+.yannick-container {
+  display:block;
+  
+}
+
 .yannick-container img{
   max-width: 40%;
   border-radius: 10%;
   float: right;
-  margin-right: 3rem;
-  margin-top: 0rem;
+  margin-right: 5%;
+  margin-top: 5%;
 }
 
 .total-quantum-container {
@@ -1614,9 +1826,13 @@ nav a:hover {
   text-emphasis: bold;
 }
 
+.small-video-container {
+  display: none;
+}
 .video-container {
+  display: flex;
   float: right;
-  margin-right: 3rem;
+  margin-right: 5%;
   margin-top: 12rem;
 }
 
